@@ -13,10 +13,30 @@
        Pindutin ang button upang malaman ang mga maaaring maging ulam 
        habang wala si mama.
       </p>
-      <button>
+      <button id="boton">
        Pindutin   
       </button> 
       
-  </body> 
+      <p id="randomUlam"></p>
+  </body>
+  <script>
+
+    var items = [
+      "nilaga",
+      "sinigang",
+      "adobo",
+      "pakbet",
+      "kare-kare"
+    ];
+
+    var ulam = document.getElementById("randomUlam");
+    
+    var botonKo = document.getElementById("boton");
+    botonKo.addEventListener("mouseup", function() {
+      var item = items[Math.floor(Math.random() * items.length)];
+      ulam.innerHTML = item;
+    });
+
+  </script>
   
 </html>
