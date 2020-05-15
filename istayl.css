@@ -2,6 +2,7 @@
      /* font-family: Times New Roman; */
      font-family: 'Indie Flower', cursive;
      text-align: center;
+     background: #031428;
     
 } 
 
@@ -22,6 +23,8 @@ h1 {
 
 .button {
      font-size: 34px;
-     color: black;
+     color: white;
      background: #0000A0;
+     border-radius: 15px;
+     padding: 8px 25px;
 }
